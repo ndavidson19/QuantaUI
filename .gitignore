@@ -28,3 +28,7 @@ pnpm-debug.log*
 *.pem
 coverage
 .svelte-kit
+
+# In progress
+src/packages/core/components/Menubar
+src/dev/pages/MenuBarDemo.svelte

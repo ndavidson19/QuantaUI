@@ -3,6 +3,11 @@
   import ButtonDemo from './pages/ButtonDemo.svelte';
   import TagsDemo from './pages/TagsInputDemo.svelte';
   import SwitchDemo from './pages/SwitchDemo.svelte';
+  import SelectDemo from './pages/SelectDemo.svelte';
+  import MenuBarDemo from './pages/MenuBarDemo.svelte';
+  import CardDemo from './pages/CardDemo.svelte';
+  import LayoutDemo from './pages/LayoutDemo.svelte';
+  import FormDemo from './pages/FormDemo.svelte';
 
   // Simple hash-based routing
   let currentHash = '';
@@ -25,5 +30,15 @@
     <TagsDemo />
   {:else if currentHash === '#switch'}
     <SwitchDemo />
+  {:else if currentHash === '#select'}
+    <SelectDemo />
+ {:else if currentHash === '#cards'}
+    <CardDemo />
+  {:else if currentHash === '#menu-bar'}
+    <MenuBarDemo />
+    {:else if currentHash === '#layouts'}
+    <LayoutDemo />
+    {:else if currentHash === '#forms'}
+    <FormDemo />
   {/if}
 </MainLayout>

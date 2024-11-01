@@ -23,6 +23,10 @@
       "$utils/*": ["src/packages/core/utils/*"]
     }
   },
-  "include": ["src/**/*.d.ts", "src/**/*.ts", "src/**/*.js", "src/**/*.svelte"],
+  "include": ["src/**/*.d.ts", "src/**/*.ts", "src/**/*.js", "src/**/*.svelte", ".storybook/**/*.ts",
+  "tests/**/*.ts",
+  "vite.config.ts",
+  "vitest.config.ts",
+  "vitest.setup.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
