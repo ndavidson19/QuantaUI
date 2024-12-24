@@ -8,6 +8,8 @@
   import CardDemo from './pages/CardDemo.svelte';
   import LayoutDemo from './pages/LayoutDemo.svelte';
   import FormDemo from './pages/FormDemo.svelte';
+  import TableDemo from './pages/TableDemo.svelte';
+  import FinancialTableDemo from './pages/FinancialTableDemo.svelte';
 
   // Simple hash-based routing
   let currentHash = '';
@@ -40,5 +42,7 @@
     <LayoutDemo />
     {:else if currentHash === '#forms'}
     <FormDemo />
+    {:else if currentHash === '#tables'}
+    <FinancialTableDemo />
   {/if}
 </MainLayout>

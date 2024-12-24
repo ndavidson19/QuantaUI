@@ -18,6 +18,7 @@ export default defineConfig(({ command }) => {
     resolve: {
       alias: {
         $core: path.resolve('./src/packages/core'),
+        $charts: path.resolve('./src/packages/charts'),
         $components: path.resolve('./src/packages/core/components'),
         $utils: path.resolve('./src/packages/core/utils')
       }
